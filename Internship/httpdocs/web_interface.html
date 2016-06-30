@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Web Interface</title>
+</head>
+
+<body>
+	<!--my_debugger.php-->
+	<!--create_config.php-->
+	<form action="func_of_soc.php" method="Post">
+		<fieldset>
+			<legend>Machines:</legend>
+			
+				ID:<br>
+					<input type="text" name="vagrantfile[id]" placeholder="Enter ID"><br>
+				Hostname:<br>
+					<input type="text" name="vagrantfile[hostname]" placeholder="Enter Hostname"><br>
+				IP:<br>
+					<input type="text" name="vagrantfile[private_network]" placeholder="Enter IP"><br>
+						
+	    </fieldset>
+	  
+	    <fieldset>
+			<legend>Nginx</legend>
+			
+			Vhosts:<br>
+				<input type="text" name="nginx[server_name]" placeholder="Server Name"><br>
+				<input type="text" name="nginx[server_aliases]" placeholder="Server Aliases"><br>
+				<input type="text" name="nginx[www_root]" placeholder="WWW Root"><br>
+		
+	    </fieldset>
+	  
+	    <fieldset>
+			<legend>MariaDB</legend>
+			
+				Settings:<br>
+					<input type="text" name="mariadb[root_password][settings]" placeholder="Root Password"><br>
+					
+				Users:<br>
+					<input type="text" name="mariadb[name][users]" placeholder="Name"><br>
+					<input type="password" name="mariadb[password][users]" placeholder="Password"><br>
+					
+				Databases:<br>
+					<input type="text" name="mariadb[name][databases]" placeholder="Name"><br>
+					
+				Grants:<br>
+					<input type="text" name="mariadb[user][grants]" placeholder="User"><br>
+					<input type="text" name="mariadb[table][grants]" placeholder="Table"><br>
+					<input type="text" name="mariadb[privileges][grants]" placeholder="Privileges"><br>
+		
+		</fieldset>
+	  
+		<br>
+		
+		<input type="submit" value="Submit">
+	  
+	</form>
+
+
+</body>
+</html>
